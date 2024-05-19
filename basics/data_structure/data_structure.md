@@ -26,6 +26,9 @@ A data structure is a way of organizing and storing data in a computer computer 
 
 - **Linear data structures**: Store data in a sequential order is allowing for easy insertion and deletion operation. Example: Array, linked list, stack And queues.
 
+
+
+
 - **Non-linear data structure**: These structures store data in a hierarchical, or interconnected manner, this allowing for more complex relationships between data elements. Example: Trees, Graphs and hash tables.
 
 ### Example of data structures
@@ -51,6 +54,18 @@ A data structure is a way of organizing and storing data in a computer computer 
 ## Linear Data structures
 
 Store data in a sequential order is allowing for easy insertion and deletion operation. Example: Array, linked list, stack And queues.
+
+### Advantage of linear data structures
+
+- **Efficient data access**:
+
+- **Dynamic sizing**:
+- **Ease of implementation**:
+- **Versatility**:
+- **Simple algorithms**:
+
+
+
 
 ### Array
 
