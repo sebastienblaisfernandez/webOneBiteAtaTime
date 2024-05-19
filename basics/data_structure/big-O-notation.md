@@ -9,7 +9,7 @@ The Big-O notation measures the worst-case complexity of an algorithm. In Big-O 
 
 ## "What will happen as n approaches infinity ?"
 
-[![Big-O notation](./big-O-notation.png)]
+![Big-O notation](./img/big-O-notation.png)
 
 ## O(1) Constant time or O(n) linear time
 
