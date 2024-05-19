@@ -3,6 +3,10 @@
 The Big-O notation measures the worst-case complexity of an algorithm. In Big-O notation,
 `n` represent the number of input.
 
+**References**
+
+[Book javascript Data Structures and Algorithms An Introduction to Understanding and implementing Core Data Structure and Algorithms](https://www.google.ca/books/edition/JavaScript_Data_Structures_and_Algorithm/K_aEDwAAQBAJ?hl=en&gbpv=1&printsec=frontcoverfor)
+
 ## "What will happen as n approaches infinity ?"
 
 [![Big-O notation](./big-O-notation.png)]
@@ -132,8 +136,4 @@ In this example, `f(n) = n^2`.
 
 If `log(nk)` is `O(log(n))` for any constant K > 0.
 
-## References
-
 [Data Structure github repo](https://github.com/trekhleb/javascript-algorithms#data-structures)
-
-[Book javascript Data Structures and Algorithms An Introduction to Understanding and implementing Core Data Structure and Algorithms](https://www.google.ca/books/edition/JavaScript_Data_Structures_and_Algorithm/K_aEDwAAQBAJ?hl=en&gbpv=1&printsec=frontcoverfor)
