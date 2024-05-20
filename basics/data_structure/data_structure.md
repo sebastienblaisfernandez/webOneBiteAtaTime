@@ -9,6 +9,7 @@ A data structure is a way of organizing and storing data in a computer computer 
 **Reference**
 
 - [Data Structure](https://www.geeksforgeeks.org/data-structures/)
+- [Data structure in Javascript](https://www.geeksforgeeks.org/courses/data-structures-and-algorithms-in-javascript?utm_source=geeksforgeeks&utm_medium=article_bottom_text_dsa&utm_campaign=courses)
 
 ## Why data a structure
 
@@ -64,6 +65,18 @@ Store data in a sequential order is allowing for easy insertion and deletion ope
 
 - **Simple algorithms**: Riddance use in linear data structure are simple and straightforward.
 
+### This advantage of linear data structures
+
+- **Limited data access**: Accessing elements not sorted at the end, or at the beginning of a sequence can be time consuming.
+
+- **Memory overhead**: Maintaining the links between elements in the linked lists and pointers in stack in queues can consume additional memory.
+
+- **Complex algorithms**: Some algorithms use it in linear data structure, such as searching and sorting can be complex and time-consuming.
+
+- **Inefficient use of memory**: Linear data structure in result in any efficient use of memory if there's a gap in memory location.
+
+- **Unsuitable for certains operations**: Linear data structure may not be suitable for operation that require constant Random access to elements, such as searching for an element in a large dataset.
+
 ### Array
 
 Array is a collection of element stored in a continuous memory locations. Array data structure can be fixed length or dynamic length. Array use zero base index.
@@ -83,15 +96,13 @@ It is possible to create a two-dimensional array, also refer as a matrix or a ar
 
 ### Linked list
 
-A link list is a linear data structure which look like a chain of node where each note contains a data feel in a reference link to the next note in the list unlike array Link list element are not stored in a continuous location in memory.
+A link list is a linear data structure which look like a chain of node where each note contains a data feel in a reference link to the next node in the list unlike array Link list element are not stored in a continuous location in memory. Link list is a dynamic data structure that came allocate and deallocate memory at runtime.
 
-- **Node**: Each element in a link list is represented by a node, Which contain two component:
-
+- **Node**: Each element in a link list is represented by a node, Which contain two component.
 - **Data**: The actual data or value associate with the element.
 - **Next Pointer (Link)**: Reference to the next node.
 
 The first known is called the **head**. It serve as the starting point for travelling the list.
-
 Last node is called the **tail**. The value of the link is NULL.
 
 #### Operations
@@ -112,6 +123,36 @@ The singly Linked list as every node store the address of the next node in the l
 
 [Single linked list](https://medium.com/swlh/singly-linked-list-in-javascript-a0e58d045561)
 
+```ts
+function SinglyLinkedListNode(data) {
+  this.data = data;
+  this.next = null;
+}
+
+function SinglyLinkedList() {
+  this.head = null;
+  this.size = 0;
+}
+
+SinglyLinkedList.prototype.isEmpty = function () {
+  return (this.size = 0);
+};
+
+SinglyListList.prototype.insert = function (value) {
+  // if first node
+  if (this.head === null) {
+    this.head = SinglyLinkedListNode(value);
+  } else {
+    let temp = this.head;
+    this.head = new SinglyLinkedListNode(value);
+    this.head.next = temp;
+  }
+  this.size++;
+};
+let sll1 = new SinglyLinkedList();
+sll1.insert(1);
+```
+
 #### Doubly Linked Lists
 
 Doubly linked list each node has two pointers, one pointer to the next note and one pointer to the previous node. This be directional structure I allow for efficient traversal in both direction.
@@ -122,7 +163,9 @@ A circular Linked list is the type of Linked list in which the first and the las
 
 ### Stack
 
-A stack is a linear data structure that follow the last-In-First-Out(LIFO) principle, meaning that the last element added to the stack is the first one to be removed.
+A stack is a linear data structure in which only the last inserted element can be removed and access. That follow the last-In-First-Out(LIFO) principle.
+
+Stack is great because it is fast, Since it is now, then the last element is to be removed, The look up and insertion happened in a constant time of `O(1)`.
 
 ![Stack](./img/stack.png)
 
@@ -130,7 +173,7 @@ A stack is a linear data structure that follow the last-In-First-Out(LIFO) princ
 
 - **push()**: Element is added on top of the stack.
 - **pop()**: An element is removed from the top of the stack.
-- **top()**: This operation returned the last inserted element that is on top of the stack without removing it.
+- **top() || peek()**: This operation returned the last inserted element that is on top of the stack without removing it.
 - **size()**: This operation returned the total number of element present in the stack.
 - **isEmpty()**: This operation indicate whether the stack is empty or not.
 
@@ -140,7 +183,8 @@ A stack is a linear data structure that follow the last-In-First-Out(LIFO) princ
 
 ### Queue
 
-A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. In a queue the first added, is the first one to be removed.
+A queue is a linear data structure, You can remove only the first added element. That follow the First-In-First-Out (FIFO) principle.
+Queue have linear time operation `O(1)`. Adding to a `enqueuing` push() is call in queueing and removing from the queue is called `dequeuing` or shift().
 
 ## Non-linear data structures
 
