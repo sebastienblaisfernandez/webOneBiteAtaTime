@@ -18,3 +18,7 @@ Stack overflow is when the maximum number of call stack of the program exceeded 
 ### Base case or terminating case
 
 Recursion there must be a base case. Because recursive method called himself they will never stop, unless this base case is reached.
+
+## Searching
+
+## sorting

@@ -96,7 +96,9 @@ It is possible to create a two-dimensional array, also refer as a matrix or a ar
 
 ### Linked list
 
-A link list is a linear data structure which look like a chain of node where each note contains a data feel in a reference link to the next node in the list unlike array Link list element are not stored in a continuous location in memory. Link list is a dynamic data structure that came allocate and deallocate memory at runtime.
+A linked list is a linear data structure which look like a chain of node where each note contains a data value and a reference link to the next node in the list.
+
+Unlike array Linked list element are not stored in a continuous location in memory. Link list is a dynamic data structure that came allocate and deallocate memory at runtime.
 
 - **Node**: Each element in a link list is represented by a node, Which contain two component.
 - **Data**: The actual data or value associate with the element.
@@ -122,6 +124,8 @@ Last node is called the **tail**. The value of the link is NULL.
 The singly Linked list as every node store the address of the next node in the list, the last node has thr reference as NULL.
 
 [Single linked list](https://medium.com/swlh/singly-linked-list-in-javascript-a0e58d045561)
+
+[Github Linked Lists](<https://github.com/Apress/js-data-structures-and-algorithms/blob/master/Chapter13(LL).js>)
 
 ```ts
 function SinglyLinkedListNode(data) {
@@ -155,11 +159,13 @@ sll1.insert(1);
 
 #### Doubly Linked Lists
 
-Doubly linked list each node has two pointers, one pointer to the next note and one pointer to the previous node. This be directional structure I allow for efficient traversal in both direction.
+Doubly linked list each node has two pointers, one pointer to the next note and one pointer to the previous node. This bidirectional singly linked list allowing for efficient traversal in both direction.
 
 #### Circular Linked Lists
 
 A circular Linked list is the type of Linked list in which the first and the last note are also connected to each other to form a circle. There is not NULL link.
+
+#### Advanced Data Structure
 
 ### Stack
 
@@ -189,6 +195,48 @@ Queue have linear time operation `O(1)`. Adding to a `enqueuing` push() is call 
 ## Non-linear data structures
 
 These structures store data in a hierarchical, or interconnected manner, this allowing for more complex relationships between data elements. Example: Trees, Graphs and hash tables.
+
+### Trees
+
+The three data structure is composed of nodes. The first/top node that do not have any parent node is called the `root node`, The other nodes are called `children nodes`.
+
+#### Binary trees
+
+The binary tree is a type of tree that has only two children node left and right.
+
+Traversal techniques are pre-order traversal, post-order traversal, in-order, traversal and level-order traversal.
+
+[Binary tree](https://www.geeksforgeeks.org/introduction-to-binary-tree-data-structure-and-algorithm-tutorials/)
+
+##### Pre-order traversal
+
+#### Binary search trees
+
+#### self-balancing binary search trees
+
+### Heaps
+
+### Graphs
+
+Heap is a type of tree-like data structure in which the parent is bigger than its children, (if Max Heap) or smaller than its children (if Min Heap).
+
+Heap can store any value of any type: strings, integer and even custom class.
+
+Heaps can return the Max or Min value in O(1) time. Heap use an array to store data instead of having pointer to their children.
+
+for example: [10, 15,30, 40, 50, 100, 40]
+
+![Heaps](./img/heaps.png)
+
+In a min Heap the elements at the root must be lower than the element at the tip of the branch.
+
+In the max heap, the route node that has the higher value, and each node value is greater than its children.
+
+**Percolation Bubbling Up and Down**
+
+When element or added or remove, the structure of the heat must remain. Percolation takes O(log2(n)) in time.
+
+### Hash tables
 
 ## Data structures in Javascript/Typescript
 
