@@ -216,8 +216,6 @@ Traversal techniques are pre-order traversal, post-order traversal, in-order, tr
 
 ### Heaps
 
-### Graphs
-
 Heap is a type of tree-like data structure in which the parent is bigger than its children, (if Max Heap) or smaller than its children (if Min Heap).
 
 Heap can store any value of any type: strings, integer and even custom class.
@@ -236,7 +234,19 @@ In the max heap, the route node that has the higher value, and each node value i
 
 When element or added or remove, the structure of the heat must remain. Percolation takes O(log2(n)) in time.
 
+### Graphs
+
+- **Vertex**: A Vertex is the node from which graph or formed.
+
+- **Edge**: An edge is the connection between node in a graph. Graphically it is the line between the vertex. Vertex can have a direction
+
 ### Hash tables
+
+Is a fixed size data structure in which the size is defined at the creation.
+
+Hash stable contain two main function, `put()` and `get()`, Boats of those function have a time complexity of `O(1)`.
+
+`localStorage` Is an example of data structure based on hash stable.
 
 ## Data structures in Javascript/Typescript
 
