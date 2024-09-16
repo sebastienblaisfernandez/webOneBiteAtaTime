@@ -1,14 +1,18 @@
 More solid with react, react native, redux, SOLID.
 
-## Explain react class component vs react function component ?
-
 ## Explain React.PureComponent
 
 `PureComponent` is similar to `Component` but it skips re-renders for same props and state.
 
 Extending `PureComponent` is equivalent to defining a custom `shouldComponentUpdate()` method that shallowly compares props and state.
 
+## Explain Class component
+
+Ther eare ES6 classes that extend from `React.Component` or `REact.PureComponent`. They have a `render()` method where you define the structure of the component UI using JSX. Class component are used for components that need to manage state of have lifecycle methods.
+
 ## Explain React function component
+
+There are simple JS functions that take props as input and return JSX elements. They are often used for presentational and stateless components.
 
 ## Name react lifecycle hook ?
 
