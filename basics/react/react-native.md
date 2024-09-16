@@ -16,8 +16,11 @@ There are simple JS functions that take props as input and return JSX elements. 
 
 ## Name react lifecycle hook ?
 
-- componentDidMount()
-- componentWillUnmount()
+- componentDidMount():  This methods is invoked immediately after a component is mounted( inserted into the DOM tree). Us eto fetch data and setting up events listeners.
+
+- componentDidUpdate(): 
+
+- componentWillUnmount(): 
 
 - getDerivedStateFromProps() Introduce in react 16.3
 
@@ -91,6 +94,9 @@ function MyButton() {
   return <button onClick={handleClick}>Clicked {count} times</button>;
 }
 ```
+## Explain `useEffect()` hook ?
+
+
 
 ## Explain `useRoute()` hook ?
 
